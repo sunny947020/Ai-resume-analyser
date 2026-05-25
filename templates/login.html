@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Login</h2>
+        <p class="sub-text">
+            welcome back to your ai resume account
+        </p>
+        <from method="post">
+        <input type ="email" name="email" placeholder="Email" required>
+        <input type ="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="swith-auth">
+            Don't have an account? <a href="/signup">Sign Up</a>
+        </p>
+</from>
+    </div>
+</div>
+
+{% endblock %}
